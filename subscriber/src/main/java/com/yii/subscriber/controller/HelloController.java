@@ -1,5 +1,6 @@
-package com.yii.publisher;
+package com.yii.subscriber.controller;
 
+import com.yii.subscriber.rpc.RpcClient;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -9,6 +10,9 @@ public class HelloController {
     @ResponseBody
     @RequestMapping("/hello")
     public String sayHello() {
+
+
+
         return "Hello World!";
     }
 }
